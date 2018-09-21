@@ -13,6 +13,6 @@ const LocalSpotSchema = new Schema({
         type: String,
         required: true,
     },
-});
+}, { collection: 'localspots' });
 
 export default mongoose.model('LocalSpot', LocalSpotSchema);
